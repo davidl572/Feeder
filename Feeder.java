@@ -4,8 +4,16 @@ public class Feeder {
      * The amount of food, in grams, currently in the bird feeder; initialized
      * in the constructor and always greater than or equal to zero
      */
-    public int currentFood;
+    private int currentFood;
+    public int getCurrentFood ()
+    {
+        return currentFood;
+    }
 
+    public Feeder (int food)
+    {
+        currentFood = food;
+    }
     /**
      * Simulates one day with numBirds birds or possibly a bear at the bird
      * feeder, as described in part (a) Precondition: numBirds > 0
