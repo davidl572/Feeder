@@ -14,5 +14,7 @@ public class Main
         System.out.println(f.simulateManyDays(10,5) + " days");
         f = new Feeder(0);
         System.out.println(f.simulateManyDays(5,10) + " days");
+        f = new Feeder(110);
+        System.out.println(f.simulateManyDays(4,3) + " days");
     }
 }
